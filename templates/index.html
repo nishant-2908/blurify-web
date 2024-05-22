@@ -1,0 +1,31 @@
+{% extends "layout.html" %} 
+
+{% block title %}
+<title>Blurify</title>
+{% endblock %} 
+
+{% block body %}
+<div class="container">
+  <form action="/" class="mb-3 form-check" method="post">
+    <h3 class="choose-title">Enter the path to the input image</h3>
+    <div class="mb-3">
+      <input type="text" class="form-control" aria-describedby="addressHelpBlock" id="file" name="file"
+      autofocus>
+        <div id="addressHelpBlock" class="form-text">
+          The input image should end in .jpg or .jpeg or .png extension.
+        </div>
+    </div>
+    <h3 class="choose-title">Enter the path to output directory</h3>
+    <div class="mb-3">
+      <input type="text" class="form-control" aria-describedby="addressHelpBlock" id="directory" name="directory">
+        <div id="addressHelpBlock" class="form-text">
+          The output directory location should be a valid directory location.
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" id="next-button" disabled>Next</button>
+  </form>
+</div>
+{% endblock %}
+{% block script %}
+<script src="/static/index.js"></script>
+{% endblock %}
