@@ -27,6 +27,10 @@ Downloading the repository
 ```bash
 git clone https://www.github.com/nishant-2908/blurify-web.git
 ```
+Downloading the dependencies
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 Running the app
